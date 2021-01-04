@@ -5,7 +5,7 @@ from .Day2 import Solution
 s = Solution()
 
 
-def test_something():
+def test_find_node():
     tree = TreeNode(7)
     tree.left = TreeNode(4)
     tree.right = TreeNode(3)
