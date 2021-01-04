@@ -1,8 +1,17 @@
+from typing import List
+
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 
 def compareTrees(a: TreeNode, b: TreeNode) -> bool:
@@ -60,3 +69,36 @@ def deserialize(data: str) -> TreeNode:
         insertIntoBST(root, i)
 
     return root
+
+
+def toListNode(original_list: List[int]):
+    if len(original_list) == 0:
+        return None
+    head, *tail = original_list
+    root_node = ListNode(head)
+    next_node = root_node
+
+    for x in tail:
+        new_node = ListNode(x)
+        next_node.next = new_node
+        next_node = new_node
+
+    return root_node
+
+
+def toList(list_node: ListNode):
+    new_list = []
+
+    if list_node is None:
+        return new_list
+
+    node = list_node
+    new_list.append(node.val)
+
+    next_node = node
+
+    while next_node.next is not None:
+        next_node = next_node.next
+        new_list.append(next_node.val)
+
+    return new_list
