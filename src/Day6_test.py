@@ -12,6 +12,7 @@ s = Solution()
         ([9, 10, 11, 12], 4, 4),
         ([], 2, 2),
         ([], 0, 0),
+        ([3, 10], 2, 2),
     ],
 )
 def test_find_kth_positive(arr, k, expected):
