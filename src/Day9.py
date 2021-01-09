@@ -2,7 +2,7 @@ from typing import List, Dict
 import collections
 
 
-def visitWordNode(
+def getLadderLength(
     queue,
     visited: Dict[str, int],
     otherVisited: Dict[str, int],
@@ -48,10 +48,10 @@ class Solution:
         ladderLength = 0
 
         while qBegin and qEnd:
-            ladderLength = visitWordNode(qBegin, visitedBegin, visitedEnd, wl, combos)
+            ladderLength = getLadderLength(qBegin, visitedBegin, visitedEnd, wl, combos)
             if ladderLength > 0:
                 return ladderLength
-            ladderLength = visitWordNode(qEnd, visitedEnd, visitedBegin, wl, combos)
+            ladderLength = getLadderLength(qEnd, visitedEnd, visitedBegin, wl, combos)
             if ladderLength > 0:
                 return ladderLength
 
