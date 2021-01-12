@@ -1,5 +1,5 @@
 import pytest
-from .Day7 import Solution
+from .Day7_LongestSubstringWithoutRepeatingCharacters import Solution
 
 s = Solution()
 

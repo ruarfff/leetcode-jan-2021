@@ -1,6 +1,6 @@
 import copy
 from .util import TreeNode
-from .Day2 import Solution
+from .Day2_PalindromePermutation import Solution
 
 s = Solution()
 

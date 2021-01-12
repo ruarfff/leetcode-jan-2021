@@ -1,7 +1,7 @@
 import pytest
 from typing import List
 from .util import ListNode, toListNode, toList
-from .Day4 import Solution
+from .Day4_BeautifulArrangement import Solution
 
 s = Solution()
 

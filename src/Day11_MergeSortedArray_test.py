@@ -1,5 +1,5 @@
 import pytest
-from .Day11 import Solution
+from .Day11_MergeSortedArray import Solution
 
 s = Solution()
 
@@ -12,6 +12,6 @@ s = Solution()
         ([0], 0, [1], 1, [1]),
     ],
 )
-def test_length_of_longest_substring(nums1, m, nums2, n, expected):
+def test_merge(nums1, m, nums2, n, expected):
     s.merge(nums1, m, nums2, n)
     assert nums1 == expected

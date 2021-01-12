@@ -1,5 +1,5 @@
 import pytest
-from .Day10 import Solution
+from .Day10_CreateSortedArrayThroughInstructions import Solution
 
 s = Solution()
 
@@ -12,5 +12,5 @@ s = Solution()
         ([1, 3, 3, 3, 2, 4, 2, 1, 2], 4),
     ],
 )
-def test_length_of_longest_substring(instructions, expected):
+def test_create_sortedArray(instructions, expected):
     assert s.createSortedArray(instructions) == expected

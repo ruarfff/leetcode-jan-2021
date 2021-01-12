@@ -1,5 +1,5 @@
 import pytest
-from .Day6 import Solution
+from .Day6_RemoveDuplicatesFromSortedListII import Solution
 
 s = Solution()
 

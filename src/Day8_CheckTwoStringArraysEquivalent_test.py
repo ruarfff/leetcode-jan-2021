@@ -1,5 +1,5 @@
 import pytest
-from .Day8 import Solution
+from .Day8_CheckTwoStringArraysEquivalent import Solution
 
 s = Solution()
 
@@ -9,8 +9,8 @@ s = Solution()
     [
         (["ab", "c"], ["a", "bc"], True),
         (["a", "cb"], ["ab", "c"], False),
-        (["abc", "d", "defg"], ["abcddefg"], True),        
+        (["abc", "d", "defg"], ["abcddefg"], True),
     ],
 )
-def test_length_of_longest_substring(word1, word2, expected):
+def test_array_strings_are_equal(word1, word2, expected):
     assert s.arrayStringsAreEqual(word1, word2) == expected

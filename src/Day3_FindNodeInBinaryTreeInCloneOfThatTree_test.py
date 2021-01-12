@@ -1,5 +1,5 @@
 import pytest
-from .Day3 import Solution
+from .Day3_FindNodeInBinaryTreeInCloneOfThatTree import Solution
 
 s = Solution()
 

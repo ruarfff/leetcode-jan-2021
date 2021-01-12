@@ -1,5 +1,5 @@
 import pytest
-from .Day1 import Solution
+from .Day1_CheckArrayFormationThroughConcatenation import Solution
 
 s = Solution()
 
