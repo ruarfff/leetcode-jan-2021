@@ -5,7 +5,7 @@ s = Solution()
 
 
 @pytest.mark.parametrize(
-    "people, limit,expected",
+    "people,limit,expected",
     [
         ([1, 2], 3, 1),
         ([3, 2, 2, 1], 3, 3),
