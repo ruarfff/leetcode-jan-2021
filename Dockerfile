@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.9.1
 
 RUN set -eux \
     && apt-get update -qqy \
