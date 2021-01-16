@@ -1,3 +1,7 @@
 FROM python:3
 
-RUN apt install pipenv
+RUN set -eux \
+    && apt-get update -qqy \
+    && apt-get install -qqy --no-install-recommends pipenv \
+    && apt-get clean \
+    && apt-get autoclean
