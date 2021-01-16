@@ -1,5 +1,5 @@
 import pytest
-from .Day14_GetMaximumInGeneratedArray import Solution
+from .Day15_GetMaximumInGeneratedArray import Solution
 
 s = Solution()
 
