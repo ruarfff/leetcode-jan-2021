@@ -12,5 +12,5 @@ s = Solution()
         (33, 66045),
     ],
 )
-def test_countVowelStrings(n, expected):
-    assert s.count_vowel_strings(n) == expected
+def test_count_vowel_strings(n, expected):
+    assert s.countVowelStrings(n) == expected
