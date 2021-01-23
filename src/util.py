@@ -157,7 +157,7 @@ class NestedInteger:
             return None
 
         return self.ni
-      
+
     def __str__(self):
         if self.isInteger():
             return f"{self.ni}"
