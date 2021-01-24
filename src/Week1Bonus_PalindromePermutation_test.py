@@ -1,5 +1,5 @@
 import pytest
-from .Week1Bonus import Solution
+from .Week1Bonus_PalindromePermutation import Solution
 
 s = Solution()
 

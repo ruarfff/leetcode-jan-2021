@@ -13,6 +13,12 @@ class ListNode:
         self.val = val
         self.next = next
 
+    def __gt__(self, ln2):
+        return self.val > ln2.val
+
+    def __lt__(self, ln2):
+        return self.val < ln2.val
+
 
 def compareTrees(a: TreeNode, b: TreeNode) -> bool:
     if a is None and b is None:

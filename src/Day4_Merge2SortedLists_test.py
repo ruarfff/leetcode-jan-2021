@@ -1,7 +1,7 @@
 import pytest
 from typing import List
 from .util import ListNode, toListNode, toList
-from .Day4_BeautifulArrangement import Solution
+from .Day4_Merge2SortedLists import Solution
 
 s = Solution()
 
